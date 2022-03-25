@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exemplos Spring - Exemplo 07</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Exemplo 07</h1>
+    <ul th:each="$item : {lista}">
+        <li>
+            <p>Nome: <span th:text="${lista.nome}"></span></p>
+            <p>Data de Nascimento: <span th:text="${lista.dataNascimento}"></span></p>
+            <p>E-mail: <span th:text="${lista.email}"></span></p>
+            <p>Senha: <span th:text="${lista.senha}"></span></p>
+        </li>
+    </ul>
+</body>
+
+</html>
